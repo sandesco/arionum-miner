@@ -10,8 +10,8 @@ import re
 import requests
 import time
 
-POOL_URL = ''
-WALLET_ADDRESS = '4boSzKSto9SqkZFxExYXhC4UnPrqqzvQ78QjABSSqXTA2JixFU1g9tBmkGZPzKtQNeDkhkvS7vmED1KuSFY33Egc'
+POOL_URL = 'http://aropool.com'
+WALLET_ADDRESS = '5jpiVh4tcRXe3xxW8mHzYeKQ6XSXfvRw1XSW8yd28qJUvm3Fhzu2p8cL14TKw3vEPRGku6Yg2DZsAHvWULinZrdw'
 WORKER_NAME = hashlib.sha224((os.uname()[1]).encode("utf-8")).hexdigest()[0:32]
 WORKER_COUNT = math.ceil((multiprocessing.cpu_count() + 1) / 2)
 
